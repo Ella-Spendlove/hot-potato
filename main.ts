@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.A, function () {
+    num = 10
     basic.showString("1 2 3 Go!")
     while (num > -1) {
         basic.pause(1000)
@@ -25,6 +26,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
+    ran = randint(5, 15)
     basic.showString("1 2 3 Go!")
     while (ran > -1) {
         basic.pause(500)
