@@ -1,10 +1,11 @@
 {
-    "name": "Hot Potato",
+    "name": "Hot Potato #3",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "neopixels": "github:ella-spendlove/neopixels#master"
     },
     "files": [
         "main.blocks",
