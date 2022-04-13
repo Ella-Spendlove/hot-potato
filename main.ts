@@ -57,11 +57,13 @@ num = 10
 ran = randint(5, 15)
 basic.showString("A=easy B=hard")
 let strip2 = neopixel.create(DigitalPin.P0, 15, NeoPixelMode.RGB)
-strip2.showColor(neopixel.rgb(randint(0, 65), randint(0, 65), randint(0, 65)))
+let range = strip2.range(0, 8)
+let range2 = strip2.range(8, 15)
+for (let index = 0; index <= 15; index++) {
+    strip2.setPixelColor(index, neopixel.rgb(randint(0, 65), randint(0, 65), randint(0, 65)))
+}
 while (true) {
     strip2.show()
     strip2.rotate(1)
     basic.pause(100)
 }
-let range = strip2.range(0, 8)
-range = strip2.range(8, 15)
