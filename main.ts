@@ -31,11 +31,12 @@ input.onButtonPressed(Button.A, function () {
     }
     basic.clearScreen()
     if (num == -1) {
-        range.showColor(neopixel.colors(NeoPixelColors.Red))
-        basic.pause(100)
-        range2.showColor(neopixel.colors(NeoPixelColors.Red))
-        basic.pause(100)
-        strip22.showColor(neopixel.colors(NeoPixelColors.Red))
+        for (let index = 0; index < 3; index++) {
+            strip2.showColor(neopixel.colors(NeoPixelColors.Red))
+            basic.pause(200)
+            strip2.showColor(neopixel.colors(NeoPixelColors.Black))
+            basic.pause(200)
+        }
         basic.showIcon(IconNames.Skull)
         basic.showString(" You're Out!")
         strip2.showColor(neopixel.colors(NeoPixelColors.Black))
@@ -78,6 +79,12 @@ input.onButtonPressed(Button.B, function () {
         range2.showColor(neopixel.colors(NeoPixelColors.Red))
         basic.pause(100)
         strip22.showColor(neopixel.colors(NeoPixelColors.Red))
+        for (let index = 0; index < 3; index++) {
+            strip2.showColor(neopixel.colors(NeoPixelColors.Red))
+            basic.pause(200)
+            strip2.showColor(neopixel.colors(NeoPixelColors.Black))
+            basic.pause(200)
+        }
         basic.showIcon(IconNames.Skull)
         basic.showString(" You're Out!")
         strip2.showColor(neopixel.colors(NeoPixelColors.Black))
